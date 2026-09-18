@@ -20,7 +20,7 @@
         extend: {
           colors: {
             musgo: {
-              fundo: '#18241A',     // Verde musgo aveludado profundo
+              fundo: '#18241A',     // Verde musgo profundo
               principal: '#2D4231', // Verde musgo autêntico botânico
               medio: '#3D5843',     // Musgo médio
               suave: '#58735E',     // Verde musgo suave / oliva
@@ -58,10 +58,10 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20 gap-4">
         
-        <!-- Logo e Nome (Formato Retangular Natural) -->
+        <!-- Logo e Nome -->
         <a href="#" class="flex items-center gap-3.5 group">
           <img 
-            src="imagens.casamarce/logo.png" 
+            src="logo.png" 
             alt="Logo Casa Marcê" 
             class="h-12 w-auto max-w-[140px] object-contain rounded-md"
             onerror="this.src='https://images.unsplash.com/photo-1556911073-38141963c9e0?auto=format&fit=crop&w=150&q=80'"
@@ -83,19 +83,17 @@
             type="text" 
             id="searchInput"
             oninput="filtrarProdutos()"
-            placeholder="Buscar por cocada, bolos, trufas, caseirinhos..."
+            placeholder="Buscar por cocada, bolos, tarts, pães..."
             class="w-full bg-musgo-fundo/70 text-white placeholder-white/50 border border-musgo-suave/40 rounded-full pl-10 pr-4 py-2 text-sm focus:outline-none focus:border-musgo-ouro focus:bg-musgo-fundo transition"
           />
         </div>
 
         <!-- Ações do Cabeçalho -->
         <div class="flex items-center gap-3 sm:gap-4">
-          <!-- Instagram Oficial Dela -->
           <a href="https://www.instagram.com/casamarce__?stkn=eHRkeWlucTN5ajcw" target="_blank" class="p-2 text-white/80 hover:text-musgo-ouro rounded-full hover:bg-musgo-medio transition" title="Nosso Instagram Oficial">
             <i data-lucide="instagram" class="w-5 h-5"></i>
           </a>
 
-          <!-- Botão da Sacola com Contador -->
           <button onclick="toggleCart()" class="relative bg-musgo-ouro hover:bg-musgo-ouroHover text-musgo-fundo px-4 py-2.5 rounded-full flex items-center gap-2 shadow-md transition font-bold">
             <i data-lucide="shopping-bag" class="w-4 h-4 text-musgo-fundo"></i>
             <span class="text-xs sm:text-sm">Sacola</span>
@@ -122,14 +120,14 @@
     </div>
   </header>
 
-  <!-- ================= APRESENTAÇÃO DA CONFEITEIRA (EM VERDE MUSGO AVELUDADO) ================= -->
+  <!-- ================= APRESENTAÇÃO DA CONFEITEIRA ================= -->
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
     <div class="bg-gradient-to-br from-musgo-principal to-musgo-fundo text-white rounded-3xl p-6 sm:p-12 shadow-xl border border-musgo-suave/40 flex flex-col md:flex-row items-center gap-8 lg:gap-12">
       
-      <!-- Foto da Confeiteira (Retangular Natural sem cortes) -->
+      <!-- Foto da Confeiteira -->
       <div class="relative shrink-0 flex justify-center">
         <img 
-          src="imagens.casamarce/confeiteira.jpg" 
+          src="confeiteira.jpg" 
           alt="Confeiteira da Casa Marcê" 
           class="w-56 sm:w-64 h-auto max-h-[360px] rounded-2xl object-cover border-2 border-musgo-ouro shadow-2xl"
           onerror="this.src='https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=500&q=80'"
@@ -139,7 +137,7 @@
         </span>
       </div>
 
-      <!-- Texto de História da Casa Marcê -->
+      <!-- Texto de História -->
       <div class="space-y-4 text-center md:text-left flex-1">
         <div class="inline-flex items-center gap-2 bg-musgo-ouro/20 border border-musgo-ouro/40 text-musgo-ouro px-3.5 py-1 rounded-full text-xs uppercase font-bold tracking-wider">
           <i data-lucide="heart" class="w-3.5 h-3.5 fill-musgo-ouro"></i> Artesanais & Confeitaria Afetiva
@@ -162,7 +160,7 @@
     </div>
   </section>
 
- <!-- ================= BARRA DE CATEGORIAS ================= -->
+  <!-- ================= BARRA DE CATEGORIAS ================= -->
   <section class="bg-musgo-medio text-white py-3.5 my-8 sticky top-20 z-30 shadow-md border-y border-musgo-suave/50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center gap-2.5 overflow-x-auto no-scrollbar pb-1 text-xs sm:text-sm font-semibold">
@@ -173,16 +171,16 @@
           💼 Kits Corporativos
         </button>
         <button onclick="filtrarCategoria('caseirinhos', this)" class="cat-pill px-4 py-2 rounded-full whitespace-nowrap transition bg-musgo-fundo/60 text-white hover:bg-musgo-fundo">
-          🥥 Caseirinhos & Cocadas
+          🥥 Caseirinhos & Salgados
         </button>
         <button onclick="filtrarCategoria('doces', this)" class="cat-pill px-4 py-2 rounded-full whitespace-nowrap transition bg-musgo-fundo/60 text-white hover:bg-musgo-fundo">
-          🍫 Doces Finos & Bombons
+          🍓 Tarts & Doces Finos
         </button>
         <button onclick="filtrarCategoria('bolos', this)" class="cat-pill px-4 py-2 rounded-full whitespace-nowrap transition bg-musgo-fundo/60 text-white hover:bg-musgo-fundo">
-          🎂 Bolos & Pães
+          🎂 Bolos & Pães Artesanais
         </button>
         <button onclick="filtrarCategoria('presentes', this)" class="cat-pill px-4 py-2 rounded-full whitespace-nowrap transition bg-musgo-fundo/60 text-white hover:bg-musgo-fundo">
-          🎁 Caixas de Presente
+          🎁 Caixas & Presentes
         </button>
       </div>
     </div>
@@ -200,7 +198,7 @@
       </div>
     </div>
 
-    <!-- Grid de Produtos Renderizado pelo JavaScript -->
+    <!-- Grid renderizado pelo JavaScript -->
     <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
   </main>
 
@@ -210,7 +208,6 @@
 
     <div id="cartPanel" class="absolute right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl flex flex-col transform translate-x-full transition-transform duration-300 pointer-events-auto">
       
-      <!-- Topo da Sacola Verde Musgo -->
       <div class="p-5 border-b border-musgo-fundo flex items-center justify-between bg-musgo-principal text-white">
         <div class="flex items-center gap-2">
           <i data-lucide="shopping-bag" class="w-5 h-5 text-musgo-ouro"></i>
@@ -221,7 +218,6 @@
         </button>
       </div>
 
-      <!-- Barra de Mimo Especial -->
       <div class="bg-musgo-claro p-3 border-b border-musgo-suave/20 text-xs">
         <div class="flex justify-between mb-1.5 font-medium text-musgo-principal">
           <span id="freeShippingText">Faltam R$ 100,00 para mimo especial</span>
@@ -232,12 +228,9 @@
         </div>
       </div>
 
-      <!-- Lista de Itens -->
       <div id="cartItemsList" class="flex-1 overflow-y-auto p-5 space-y-4 bg-white"></div>
 
-      <!-- Totalizadores e Checkout WhatsApp -->
       <div class="border-t border-musgo-suave/20 p-5 bg-musgo-claro space-y-3">
-        <!-- Cupom -->
         <div class="flex gap-2">
           <input 
             type="text" 
@@ -251,7 +244,6 @@
         </div>
         <p id="cupomAviso" class="text-[11px] text-green-800 hidden font-bold">✓ 10% de desconto aplicado!</p>
 
-        <!-- Preços -->
         <div class="text-xs space-y-1 text-gray-600 pt-1">
           <div class="flex justify-between">
             <span>Subtotal:</span>
@@ -267,7 +259,6 @@
           </div>
         </div>
 
-        <!-- Botão WhatsApp Oficial -->
         <button onclick="finalizarPedidoWhatsApp()" class="w-full bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold py-3.5 rounded-xl shadow-lg flex items-center justify-center gap-2 transition">
           <i data-lucide="message-circle" class="w-5 h-5"></i>
           Finalizar Pedido via WhatsApp
@@ -298,13 +289,13 @@
       </div>
     </div>
     <div class="max-w-7xl mx-auto px-4 text-center text-xs text-white/40 pt-4 border-t border-white/10">
-      © Casa Marcê - Todos os direitos reservados. Feito com afeto e açúcar.
+      © Casa Marcê - Todos os direitos reservados. Feito com afeto e cacau.
     </div>
   </footer>
 
   <!-- ================= JAVASCRIPT ================= -->
   <script>
-    // CATÁLOGO DE PRODUTOS (Caminhos ajustados para segurança)
+    // FOTOS SOLTAS NA RAIZ (Sem a pasta)
     const produtos = [
       {
         id: 1,
@@ -312,7 +303,7 @@
         categoria: "caseirinhos",
         preco: 20.00,
         precoAntigo: null,
-        imagem: "imagens.casamarce/cocada-brulee.jpeg",
+        imagem: "cocada-brulee.jpeg",
         fallbackImg: "https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=600&q=80",
         descricao: "Cremosa por dentro e com aquela crosta de açúcar maçaricado na hora. O clássico inesquecível da Casa Marcê.",
         badge: "Destaque"
@@ -323,7 +314,7 @@
         categoria: "bolos",
         preco: 54.00,
         precoAntigo: null,
-        imagem: "imagens.casamarce/paodelicia.jpeg",
+        imagem: "paodelicia.jpeg",
         fallbackImg: "https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=600&q=80",
         descricao: "Pãozinho artesanal, recheado com creme de queijo e bastante queijo parmesão.",
         badge: "Mais Vendido"
@@ -334,7 +325,7 @@
         categoria: "caseirinhos",
         preco: 18.00,
         precoAntigo: null,
-        imagem: "imagens.casamarce/cookie.jpeg",
+        imagem: "cookie.jpeg",
         fallbackImg: "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=600&q=80",
         descricao: "Massa amanteigada e recheio cremoso, perfeito com um cafezinho.",
         badge: "Queridinho"
@@ -345,42 +336,42 @@
         categoria: "presentes",
         preco: 120.00,
         precoAntigo: null,
-        imagem: "imagens.casamarce/cestas.jpeg",
+        imagem: "cestas.jpeg",
         fallbackImg: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=600&q=80",
         descricao: "Embalagem sofisticada com laço de cetim, seleção de nossos artesanais e cartão personalizado.",
         badge: "Presente Ideal"
       },
-       {
+      {
         id: 5,
-        nome: " Marcê Especial de Presente",
+        nome: "Caixote Rústico Especial",
         categoria: "presentes",
         preco: 120.00,
         precoAntigo: null,
-        imagem: "imagens.casamarce/caixote.jpeg",
+        imagem: "caixote.jpeg",
         fallbackImg: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=600&q=80",
         descricao: "Caixote rústico de madeira, seleção de nossos artesanais e cartão personalizado.",
-        badge: null
+        badge: "Exclusivo"
       },
-       {
+      {
         id: 6,
-        nome: " Bolo de Limão M",
+        nome: "Bolo de Limão M",
         categoria: "bolos",
         preco: 70.00,
         precoAntigo: null,
-        imagem: "imagens.casamarce/bololimao.jpeg",
+        imagem: "bololimao.jpeg",
         fallbackImg: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=600&q=80",
-        descricao: "Bolo de lião de massa fofinha e cobertura de mousse de limão.",
+        descricao: "Bolo de limão de massa fofinha e cobertura de mousse de limão.",
         badge: null
       },
-       {
+      {
         id: 7,
-        nome: " Tart de Nutela P",
+        nome: "Tart de Nutella P",
         categoria: "doces",
         preco: 5.00,
         precoAntigo: null,
-        imagem: "imagens.casamarce/tartdenutela.jpeg",
+        imagem: "tartdenutela.jpeg",
         fallbackImg: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=600&q=80",
-        descricao: "Tart de Nutela, com base amanteigada, perfeito para sua sobremesa.",
+        descricao: "Tart de Nutella com base amanteigada crocante, perfeita para sua sobremesa.",
         badge: null
       },
       {
@@ -389,57 +380,57 @@
         categoria: "corporativo",
         preco: 45.00,
         precoAntigo: null,
-        precoTexto: "A partir de", // indica que o valor varia conforme os itens
-        imagem: "imagens.casamarce/corporativo.jpeg",
+        precoTexto: "A partir de",
+        imagem: "corporativo.jpeg",
         fallbackImg: "https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=600&q=80",
         descricao: "Exclusivo sob encomenda! Monte sua caixa com as delícias que preferir do cardápio (pães, cocadas, cookies ou doces) e personalize com a identidade da sua empresa.",
         badge: "Sob Encomenda",
-        personalizavel: true // ativa o tratamento especial
-      },
-      {
-        id: 8,
-        nome: " Tart Creme deleite e morango fatiado P",
-        categoria: "doces",
-        preco: 6.00,
-        precoAntigo: null,
-        imagem: "imagens.casamarce/tartmorango.jpeg",
-        fallbackImg: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=600&q=80",
-        descricao: "Tart Creme deleite feito de leite Ninho, morangos fatiados e raspas de laranja, perfeita combinação.",
-        badge: null
+        personalizavel: true
       },
       {
         id: 9,
+        nome: "Tart Creme de Leite Ninho & Morango P",
+        categoria: "doces",
+        preco: 6.00,
+        precoAntigo: null,
+        imagem: "tartmorango.jpeg",
+        fallbackImg: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=600&q=80",
+        descricao: "Tart com creme especial de leite Ninho, morangos frescos fatiados e raspas de laranja.",
+        badge: "Novidade"
+      },
+      {
+        id: 10,
         nome: "Nordeste Roll",
         categoria: "bolos",
         preco: 16.00,
         precoAntigo: null,
-        imagem: "imagens.casamarce/paodecalabresa.jpeg",
+        imagem: "paodecalabresa.jpeg",
         fallbackImg: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=600&q=80",
-        descricao: "Pão artesanao de massa de batata recheado com charque, cebola e queijo qualho, puro sabor nordestino.",
+        descricao: "Pão artesanal de massa de batata recheado com charque, cebola e queijo coalho, puro sabor nordestino.",
         badge: null
       },
-       {
-        id: 10,
+      {
+        id: 11,
         nome: "Bolo de Maracujá",
         categoria: "bolos",
         preco: 80.00,
         precoAntigo: null,
-        imagem: "imagens.casamarce/bolomaracuja.jpeg",
+        imagem: "bolomaracuja.jpeg",
         fallbackImg: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=600&q=80",
-        descricao: "Bolo de maracujá e cobertuta de brigadeiro de maracujá, super refrescante.",
+        descricao: "Bolo de maracujá fofinho com cobertura generosa de brigadeiro de maracujá, super refrescante.",
         badge: null
       },
-       {
-        id: 11,
+      {
+        id: 12,
         nome: "Quiche Caprese",
         categoria: "caseirinhos",
         preco: 22.00,
         precoAntigo: null,
-        imagem: "imagens.casamarce/quichecaprese.jpeg",
+        imagem: "quichecaprese.jpeg",
         fallbackImg: "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=600&q=80",
-        descricao: "Quiche com creme Caprese, tomates cereja e manjericão.",
+        descricao: "Quiche delicada com creme caprese especial, tomates cereja confitados e manjericão fresco.",
         badge: null
-      },
+      }
     ];
 
     let carrinho = [];
@@ -449,6 +440,8 @@
     function renderizarProdutos(lista) {
       const grid = document.getElementById("productsGrid");
       const contador = document.getElementById("produtosContador");
+      if (!grid) return;
+
       grid.innerHTML = "";
       contador.innerText = `${lista.length} delícia(s) encontrada(s)`;
 
@@ -473,22 +466,33 @@
 
             <div class="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between">
               <div>
+                ${prod.precoTexto ? `<span class="text-[10px] text-musgo-suave uppercase font-bold block">${prod.precoTexto}</span>` : ''}
                 ${prod.precoAntigo ? `<span class="text-[10px] text-gray-400 line-through block">R$ ${prod.precoAntigo.toFixed(2).replace('.', ',')}</span>` : ''}
                 <span class="text-lg font-bold text-musgo-principal">R$ ${prod.preco.toFixed(2).replace('.', ',')}</span>
               </div>
-              <button 
-                onclick="adicionarAoCarrinho(${prod.id})" 
-                class="bg-musgo-principal hover:bg-musgo-fundo text-musgo-ouro p-2.5 rounded-full transition flex items-center justify-center shadow-sm"
-                title="Adicionar à sacola">
-                <i data-lucide="plus" class="w-4 h-4"></i>
-              </button>
+              
+              ${prod.personalizavel ? `
+                <a 
+                  href="https://wa.me/5581999999999?text=Olá!%20Gostaria%20de%20montar%20um%20Kit%20Corporativo%20personalizado%20sob%20encomenda%20com%20itens%20do%20cardápio." 
+                  target="_blank"
+                  class="bg-musgo-ouro hover:bg-musgo-ouroHover text-musgo-fundo text-xs font-bold px-3.5 py-2 rounded-full transition flex items-center gap-1.5 shadow-sm">
+                  <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Montar
+                </a>
+              ` : `
+                <button 
+                  onclick="adicionarAoCarrinho(${prod.id})" 
+                  class="bg-musgo-principal hover:bg-musgo-fundo text-musgo-ouro p-2.5 rounded-full transition flex items-center justify-center shadow-sm"
+                  title="Adicionar à sacola">
+                  <i data-lucide="plus" class="w-4 h-4"></i>
+                </button>
+              `}
             </div>
           </div>
         `;
         grid.appendChild(card);
       });
 
-      lucide.createIcons();
+      if (window.lucide) lucide.createIcons();
     }
 
     // FILTROS
@@ -595,7 +599,6 @@
       const total = Math.max(0, subtotal - desconto);
       totalEl.innerText = `R$ ${total.toFixed(2).replace('.', ',')}`;
 
-      // Barra de progresso
       const meta = 100;
       const faltam = meta - subtotal;
       const barra = document.getElementById("freeShippingBar");
@@ -620,7 +623,7 @@
             <p class="text-sm font-medium text-musgo-suave">Sua sacola está vazia.</p>
           </div>
         `;
-        lucide.createIcons();
+        if (window.lucide) lucide.createIcons();
         return;
       }
 
@@ -643,17 +646,17 @@
         listaEl.appendChild(row);
       });
 
-      lucide.createIcons();
+      if (window.lucide) lucide.createIcons();
     }
 
-    // ENVIAR LISTA COMPLETA PARA O WHATSAPP
+    // FINALIZAR PEDIDO VIA WHATSAPP
     function finalizarPedidoWhatsApp() {
       if (carrinho.length === 0) {
         alert("Adicione delícias na sacola antes de finalizar!");
         return;
       }
 
-      // Substitua pelo número real dela com DDD:
+      // Substitua pelo WhatsApp real dela com DDD:
       const telefone = "5581999999999";
 
       let msg = "✨ *Olá Casa Marcê! Gostaria de fazer uma encomenda:*%0A%0A";
